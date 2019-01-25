@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    height: 50px;
+    background: #333333;
+}
+
+/* ////////////////////main start/////////////////// */
+.main {
+   margin: 0px auto;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px
+}
+
+.search-figure {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.search-button{
+    height: 30px;
+    width: 8%;
+    Background: #333333;
+    color: white;
+    border: 1px solid grey;
+}
+
+.search-button:hover {
+    Background: white;
+    color: #333333;
+    border: 2px solid #333333;
+    font-weight: 600;
+}
+
+/* start main > item-autor */
+
+.item-autor {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.autor {
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #333333;
+    margin: 20px;
+}
+
+.item-autor-title-link{
+    text-decoration: none;
+    color: #333333;
+}
+
+.autor-discription {
+    margin-top: 10px;
+}
+
+/* The end main > item-autor */
+
+/* ////////////////////The end  main /////////////////// */
+
+
+
+@media (max-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-figure {
+        width: 80%;
+        margin-right: 5px;
+        height: 20px;
+    }
+    
+    .search-button{
+        height: 30px;
+        width: 60%;
+        margin-top: 5px;
+        Background: #333333;
+        color: white;
+        border: 1px solid grey;
+    }
+
+    .search-button:hover {
+        Background: white;
+        color: #333333;
+        border: 2px solid #333333;
+        font-weight: 600;
+    }
+
+    .autor {
+        width: 95%;
+        padding: 5px;
+        border: 1px solid #333333;
+        margin: 10px;
+    }
+ }
+@media (max-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-figure {
+        width: 90%;
+        margin-right: 5px;
+        height: 20px;
+    }
+    
+    .search-button{
+        height: 30px;
+        width: 30%;
+        margin-top: 5px;
+        Background: #333333;
+        color: white;
+        border: 1px solid grey;
+    }
+
+    .search-button:hover {
+        Background: white;
+        color: #333333;
+        border: 2px solid #333333;
+        font-weight: 600;
+    }
+
+    .autor {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid #333333;
+        margin: 10px;
+    }
+ }
+@media (max-width:600px)  {
+     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    
+     .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-figure {
+        width: 90%;
+        margin-right: 5px;
+        height: 20px;
+    }
+    
+    .search-button{
+        height: 30px;
+        width: 40%;
+        margin-top: 5px;
+        Background: #333333;
+        color: white;
+        border: 1px solid grey;
+    }
+
+    .search-button:hover {
+        Background: white;
+        color: #333333;
+        border: 2px solid #333333;
+        font-weight: 600;
+    }
+
+    .autor {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid #333333;
+        margin: 10px;
+    }}
+@media (max-width:801px)  {
+     /* tablet, landscape iPad, lo-res laptops ands desktops */
+     .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-figure {
+        width: 80%;
+        margin-right: 5px;
+        height: 20px;
+    }
+    
+    .search-button{
+        height: 30px;
+        width: 35%;
+        margin-top: 5px;
+        Background: #333333;
+        color: white;
+        border: 1px solid grey;
+    }
+
+    .search-button:hover {
+        Background: white;
+        color: #333333;
+        border: 2px solid #333333;
+        font-weight: 600;
+    }
+
+    .autor {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid #333333;
+        margin: 10px;
+    }
+}
