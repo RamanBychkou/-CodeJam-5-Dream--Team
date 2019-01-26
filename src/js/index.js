@@ -1,7 +1,5 @@
 import data from './data';
 import searchingItemTemplate from './searching-item.template';
-import style from '../css/style.css';
-import reset from '../css/reset.css';
 
 function getUrlVars() {
   const vars = {};
@@ -11,12 +9,17 @@ function getUrlVars() {
   return vars;
 }
 
+const ourLocation = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
 const { log } = console;
 const searchingNameEl = document.getElementById('name');
 const locationEl = document.getElementById('location');
 const findBtn = document.getElementById('find-btn');
 const searchingListEl = document.getElementById('searching-list');
 let { lang } = getUrlVars();
+
+function changeLang(language) {
+
+}
 
 function findPersons(obj, language, name = '', location = '') {
   const list = [];
@@ -63,21 +66,19 @@ function addPersons(persons = []) {
   }
 }
 
-if (getUrlVars().name) searchingNameEl.value = decodeURI(getUrlVars().name);
-if (!lang) lang = 'ru';
-findBtn.addEventListener('click', () => {
-  clearSearchingList();
-  const persons = findPersons(data, lang, searchingNameEl.value, locationEl.value);
-  addPersons(persons);
-});
-searchingNameEl.addEventListener('keyup', (event) => {
-  if (event.key === 'Enter') findBtn.click();
-});
-locationEl.addEventListener('keyup', (event) => {
-  if (event.key === 'Enter') findBtn.click();
-});
-findBtn.click();
-
-function changeLang(language) {
-
+if (ourLocation === 'producers.html') {
+  if (getUrlVars().name) searchingNameEl.value = decodeURI(getUrlVars().name);
+  if (!lang) lang = 'ru';
+  findBtn.addEventListener('click', () => {
+    clearSearchingList();
+    const persons = findPersons(data, lang, searchingNameEl.value, locationEl.value);
+    addPersons(persons);
+  });
+  searchingNameEl.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter') findBtn.click();
+  });
+  locationEl.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter') findBtn.click();
+  });
+  findBtn.click();
 }

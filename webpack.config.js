@@ -1,60 +1,58 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  context: __dirname,
-  entry: './src/js/app.js',
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+	entry: [
+		'./src/js/index.js',
+		'./src/css/style.css',
+	],
+	output: {
+    path: path.resolve(__dirname, 'dist/src/js'),
+    filename: 'main.js'
   },
-
-  resolve: {
-    extensions: ['.js'],
-  },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: `${__dirname}/index.html`,
-      filename: 'index.html',
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'main.css',
-      allChunks: true,
-    }),
-  ],
-
   module: {
     rules: [
-      {
-        test: /\.(png|svg|jpg|wav|otf|mp3|gif)$/,
+			{
+        test: /\.(png|jpg|gif)$/,
         use: [
           {
             loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
+            options: {name: 'img/[name].[ext]'}  
+          }
+        ]
+      },
+			{
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {name: 'img/[name].[ext]'}  
+          }
+        ]
+      },
+			{
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ],
+        use: ['style-loader','css-loader']
       },
-      {
-        test: /\.html$/,
-        loader: 'html-loader',
-        options: {
-          minimize: false,
-          attrs: ['img:src', 'link:href', 'sounds:src'],
-        },
-      },
-    ],
-  },
-  mode: 'development',
-  devtool: 'source-map',
+    ]
+	},
+	plugins: [
+    new CopyWebpackPlugin([ 
+			{from: './src/*.html', to: path.join(__dirname, 'dist')},
+			{from: './src/img/*', to: path.join(__dirname, 'dist')}
+		], []
+		)],
+	devtool: "source-map",
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  }
 };
