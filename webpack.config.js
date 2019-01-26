@@ -7,11 +7,29 @@ module.exports = {
 		'./src/css/style.css',
 	],
 	output: {
-    path: path.resolve(__dirname, 'dist/src'),
+    path: path.resolve(__dirname, 'dist/src/js'),
     filename: 'main.js'
   },
   module: {
     rules: [
+			{
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {name: 'img/[name].[ext]'}  
+          }
+        ]
+      },
+			{
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {name: 'img/[name].[ext]'}  
+          }
+        ]
+      },
 			{
         test: /\.js$/,
         exclude: /node_modules/,
