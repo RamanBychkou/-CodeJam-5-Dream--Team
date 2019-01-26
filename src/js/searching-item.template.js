@@ -1,8 +1,8 @@
 export default `
 <div class="searching-item">
-    <img src="" alt="">
+    <a class="author-link" href=""><img src="" alt=""></a>
     <div class="info-view">
-        <span class="author-name"></span>
+        <a href="" class="author-name"></a>
         <span class="author-location"></span>
     </div>
 </div>
