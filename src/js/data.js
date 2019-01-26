@@ -1,0 +1,1019 @@
+export default {
+  eng: {
+    producers: [
+      {
+        name: 'Victor N. Dashuk',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
+        cityBirth: 'S. Portage hoyniksky district Gomel region.',
+        birthday: '16 September 1938.',
+        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        gallery: [
+          'http://hojniki.ucoz.ru/books/dashuk_partreht.jpg',
+          'http://hojniki.ucoz.ru/pictures/dashuk_dlja_tehkstu_3a.jpg',
+          'https://www.dw.com/image/17619539_303.jpg',
+          'https://upload.wikimedia.org/wikipedia/ru/3/37/Daschuk.jpg',
+        ],
+        biography: [
+          {
+            action: 'He graduated from the Faculty of BSU',
+            date: '1960',
+          },
+          {
+            action: 'He graduated from the highest courses of scriptwriters and directors in Moscow',
+            date: '1967',
+          },
+          {
+            action: 'Winner of the Leninsky Komsomol Prize of Belarus',
+            date: '1976',
+          },
+          {
+            action: 'Honored Artist of the BSSR',
+            date: '1977',
+          },
+          {
+            action: 'Head of the workshop directing documentaries',
+            date: '1989—1993',
+          },
+          {
+            action: 'Created studio "Mr. D."',
+            date: '1993—2005',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'House',
+            date: '1970',
+          },
+          {
+            name: 'Madness of the brave',
+            date: '1970',
+          },
+          {
+            name: 'Died a long time ago the battle ',
+            date: '1970',
+          },
+          {
+            name: 'Cuckoo was cooing ',
+            date: '1972',
+          },
+          {
+            name: 'Biography Polonaise in a minor ',
+            date: '1973',
+          },
+          {
+            name: 'I am from the fire village ',
+            date: '1975-1978',
+          },
+          {
+            name: 'Pipe ',
+            date: '1981',
+          },
+          {
+            name: 'Two hundred eighty-eighth autumn ',
+            date: '1981',
+          },
+          {
+            name: 'Vasil Bykov. Climbing ',
+            date: '1984',
+          },
+        ],
+      },
+      {
+        name: 'Ptashuk, Mikhail Nikolaevich',
+        personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
+        cityBirth: 'В. Федюки Ляховичского р-на',
+        birthday: '28 января 1943.',
+        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        gallery: [
+          'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
+          'https://novychas.by/images/image_5.jpg',
+          'https://novychas.by/images/hqdefault_1_logo_1.jpg',
+        ],
+        biography: [
+          {
+            action: 'He graduated from the directing Department of The theater school named after Shukin',
+            date: '1967',
+          },
+          {
+            action: 'Lenin Komsomol prize',
+            date: '1980',
+          },
+          {
+            action: 'Honored artist of the BSSR ',
+            date: '1982',
+          },
+          {
+            action: 'State prize of the BSSR ',
+            date: '1982',
+          },
+          {
+            action: 'People\'s artist of BSSR ',
+            date: '1990',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Лесные качели',
+            date: '1975 ',
+          },
+          {
+            name: 'Время выбрало нас ',
+            date: '1978 ',
+          },
+          {
+            name: 'возьму твою боль',
+            date: '1980 ',
+          },
+          {
+            name: 'Черный замок Ольшанский',
+            date: '1984 ',
+          },
+          {
+            name: 'Знак беды ',
+            date: '1986 ',
+          },
+          {
+            name: 'Наш бронепоезд',
+            date: '1988 ',
+          },
+          {
+            name: 'Кооператив" Политбюро',
+            date: '1992 ',
+          },
+        ],
+      },
+      {
+        name: 'Vladimir V. Moroz',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
+        cityBirth: 'Kossovo, Ivatsevichi district',
+        birthday: '11 June 1953',
+        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        gallery: [
+          'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
+          'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
+          'https://time.graphics/uploadedFiles/500/00/5f/005f0b02e6d44ad37ebae2d3b2772dc2.jpg',
+          'https://www.sb.by/upload/iblock/c02/c021bfd5414d2efb1a8baf92d52bd967.jpg',
+        ],
+        biography: [
+          {
+            action: 'Vladimir Moroz was born',
+            date: '11.06.1953',
+          },
+          {
+            action: 'He graduated from high school in the village of Domanovo ',
+            date: '1970',
+          },
+          {
+            action: 'Graduated from the architectural faculty of the Belarusian Polytechnic Institute',
+            date: '1975',
+          },
+          {
+            action: 'Gorky Literature Institute in Moscow',
+            date: '1983',
+          },
+          {
+            action: 'He worked as an engineer at the production and technical Association “Integral “',
+            date: '1975-1977',
+          },
+          {
+            action: 'Lead Editor of the Chronicle Studio of the National Film Studio Belarusfilm.',
+            date: 'С 2005 года ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'И пусть нам вечным памятником будет ',
+            date: '2006',
+          },
+          {
+            name: 'Нефтяная жемчужина Беларуси ',
+            date: '2006',
+          },
+          {
+            name: 'Лазер Алферова',
+            date: '2008',
+          },
+          {
+            name: 'Мифологемы Родина',
+            date: '2009',
+          },
+          {
+            name: 'Беларусьфильм 2010 ',
+            date: '2010',
+          },
+        ],
+      },
+      {
+        name: 'Victor T. Tourov',
+        personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
+        cityBirth: 'Mogilev',
+        birthday: '25 October 1936',
+        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        gallery: [
+          'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
+          'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
+          'http://gdb.rferl.org/B60F3D39-BE2A-4AEC-849F-67E0DBE42740_w610_r0_s.jpg',
+        ],
+        biography: [
+          {
+            action: 'Director of the Studio "Belarusfilm"',
+            date: 'Since 1959',
+          },
+          {
+            action: 'He graduated from the directing Department of all-Union state Institute of cinematography',
+            date: '1961',
+          },
+          {
+            action: 'Secretary of the Union of cinematographers of Belarus',
+            date: '1976—1981',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Через кладбище',
+            date: '1965',
+          },
+          {
+            name: 'Я родом из детства',
+            date: '1966',
+          },
+          {
+            name: 'Сыновья идут в бой',
+            date: '1969',
+          },
+          {
+            name: 'Время ее сыновей',
+            date: '1974',
+          },
+          {
+            name: 'Высокая кровь',
+            date: '1989',
+          },
+          {
+            name: 'Черный аист',
+            date: '1993',
+          },
+          {
+            name: 'Шляхтич Завальня',
+            date: '1994',
+          },
+        ],
+      },
+      {
+        name: 'Yuri Viktorovich Tarich',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
+        cityBirth: 'Polotsk',
+        birthday: '12 (24) January 1885',
+        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        gallery: [
+          'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
+          'http://kino-rodina.by/tarich_.gif',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bust_to_Yuri_Tarich.JPG/300px-Bust_to_Yuri_Tarich.JPG',
+        ],
+        biography: [
+          {
+            action: 'He studied at the law faculty of Moscow University',
+            date: '1903—1905',
+          },
+          {
+            action: 'he was arrested as a member of the Warsaw military revolutionary organization of the RSDLP and deported to the village of Tara in Tobolsk province. ',
+            date: 'In December 1905',
+          },
+          {
+            action: 'he was an actor in Tobolsk, then in Chita, Lipetsk, Tambov, Vilnius. During the First world war he served in the army, where he received the rank of Lieutenant.',
+            date: 'Since 1907',
+          },
+          {
+            action: 'in Moscow, actor and Director of a number of leading theaters (including worked with V. Meyerhold)',
+            date: 'Since 1917 ',
+          },
+          {
+            action: '— one of the leaders of the cadet Theater of the Kremlin.',
+            date: '1920—1924 ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Банда отца Кныша',
+            date: '1924 ',
+          },
+          {
+            name: 'враги',
+            date: '1924 ',
+          },
+          {
+            name: 'волки',
+            date: '1925',
+          },
+          {
+            name: 'Марокко',
+            date: '1925',
+          },
+          {
+            name: 'первые огни',
+            date: '1925',
+          },
+          {
+            name: 'Крылья холопа',
+            date: '1926',
+          },
+          {
+            name: 'Булат',
+            date: '1926',
+          },
+          {
+            name: 'Лесная быль',
+            date: '1926',
+          },
+          {
+            name: 'свои и чужие',
+            date: '1928',
+          },
+        ],
+      },
+    ],
+  },
+  ru: {
+    producers: [
+      {
+        name: 'Виктор Никифорович Дашук',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
+        cityBirth: 'с. Волок Хойникского р - на Гомельской обл.',
+        birthday: '16 сентября 1938г.',
+        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        gallery: [
+          'http://hojniki.ucoz.ru/books/dashuk_partreht.jpg',
+          'http://hojniki.ucoz.ru/pictures/dashuk_dlja_tehkstu_3a.jpg',
+          'https://www.dw.com/image/17619539_303.jpg',
+          'https://upload.wikimedia.org/wikipedia/ru/3/37/Daschuk.jpg',
+        ],
+        biography: [
+          {
+            action: 'Закончил факультет БГУ',
+            date: '1960',
+          },
+          {
+            action: 'Закончил высшие курсы сценаристов и режисёров в Москве',
+            date: '1967',
+          },
+          {
+            action: 'Лоуреат премии Ленинского комсомола Беларуси',
+            date: '1976',
+          },
+          {
+            action: 'Заслуженный деятель исскуств БССР',
+            date: '1977',
+          },
+          {
+            action: 'Руководитель мастерской режиссуры документального кино',
+            date: '1989—1993',
+          },
+          {
+            action: 'Создал студию «Господин Д.»',
+            date: '1993—2005',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Дом',
+            date: '1970',
+          },
+          {
+            name: 'Безумие храбрых',
+            date: '1970',
+          },
+          {
+            name: 'Давным-давно умер бой ',
+            date: '1970',
+          },
+          {
+            name: 'Кукушка куковала',
+            date: '1972',
+          },
+          {
+            name: 'Биография Полонеза ля минор ',
+            date: '1973',
+          },
+          {
+            name: 'Я из огненной деревни ',
+            date: '1975-1978',
+          },
+          {
+            name: 'Прощание ',
+            date: '1980',
+          },
+          {
+            name: 'У войны не женское лицо ',
+            date: '1980-1984',
+          },
+          {
+            name: 'Труба',
+            date: '1981',
+          },
+        ],
+      },
+      {
+        name: 'Пташук, Михаил Николаевич',
+        personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
+        cityBirth: 'В. Федюки Ляховичского р-на',
+        birthday: '28 января 1943.',
+        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        gallery: [
+          'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
+          'https://novychas.by/images/image_5.jpg',
+          'https://novychas.by/images/hqdefault_1_logo_1.jpg',
+        ],
+        biography: [
+          {
+            action: 'Окончил режиссерский факультет Театрального училища имени Б. Щукина',
+            date: '1967',
+          },
+          {
+            action: 'Премия Ленинского комсомола ',
+            date: '1980',
+          },
+          {
+            action: 'Заслуженный деятель искусств БССР',
+            date: '1982',
+          },
+          {
+            action: 'Государственная премия БССР ',
+            date: '1982',
+          },
+          {
+            action: 'Народный артист БССР ',
+            date: '1990',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Лесные качели',
+            date: '1975 ',
+          },
+          {
+            name: 'Время выбрало нас ',
+            date: '1978 ',
+          },
+          {
+            name: 'возьму твою боль',
+            date: '1980 ',
+          },
+          {
+            name: 'Черный замок Ольшанский',
+            date: '1984 ',
+          },
+          {
+            name: 'Знак беды ',
+            date: '1986 ',
+          },
+          {
+            name: 'Наш бронепоезд',
+            date: '1988 ',
+          },
+          {
+            name: 'Кооператив" Политбюро',
+            date: '1992 ',
+          },
+        ],
+      },
+      {
+        name: 'Мороз Владимир Викентьевич',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
+        cityBirth: 'Коссово, Ивацевичский район',
+        birthday: '11 июня 1953',
+        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        gallery: [
+          'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
+          'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
+          'https://time.graphics/uploadedFiles/500/00/5f/005f0b02e6d44ad37ebae2d3b2772dc2.jpg',
+          'https://www.sb.by/upload/iblock/c02/c021bfd5414d2efb1a8baf92d52bd967.jpg',
+        ],
+        biography: [
+          {
+            action: 'Мороз Владимир, родился',
+            date: '11.06.1953',
+          },
+          {
+            action: 'Среднюю школу окончил в деревне Доманово',
+            date: '1970',
+          },
+          {
+            action: 'Окончил архитектурный факультет Белорусского политехнического института',
+            date: '1975',
+          },
+          {
+            action: 'Литературный институт имени А. М. Горького в Москве',
+            date: '1983',
+          },
+          {
+            action: 'Работал инженером на производственно-техническом объединении “Интеграл”',
+            date: '1975-1977',
+          },
+          {
+            action: 'ведущий редактор студии "Летопись" Национальной киностудии "Беларусьфильм".',
+            date: 'С 2005 года ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'И пусть нам вечным памятником будет ',
+            date: '2006',
+          },
+          {
+            name: 'Нефтяная жемчужина Беларуси ',
+            date: '2006',
+          },
+          {
+            name: 'Лазер Алферова',
+            date: '2008',
+          },
+          {
+            name: 'Мифологемы Родина',
+            date: '2009',
+          },
+          {
+            name: 'Беларусьфильм 2010 ',
+            date: '2010',
+          },
+        ],
+      },
+      {
+        name: 'Виктор Тимофеевич Туров',
+        personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
+        cityBirth: 'Могилев ',
+        birthday: '25 октября 1936',
+        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        gallery: [
+          'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
+          'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
+          'http://gdb.rferl.org/B60F3D39-BE2A-4AEC-849F-67E0DBE42740_w610_r0_s.jpg',
+        ],
+        biography: [
+          {
+            action: 'режиссер киностудии Беларусьфильм',
+            date: 'С 1959',
+          },
+          {
+            action: 'Окончил режиссерский факультет Всесоюзного государственного института кинематографии',
+            date: '1961',
+          },
+          {
+            action: 'первый секретарь правления Союза кинематографистов Беларуси',
+            date: '1976—1981',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Через кладбище',
+            date: '1965',
+          },
+          {
+            name: 'Я родом из детства',
+            date: '1966',
+          },
+          {
+            name: 'Сыновья идут в бой',
+            date: '1969',
+          },
+          {
+            name: 'Время ее сыновей',
+            date: '1974',
+          },
+          {
+            name: 'Высокая кровь',
+            date: '1989',
+          },
+          {
+            name: 'Черный аист',
+            date: '1993',
+          },
+          {
+            name: 'Шляхтич Завальня',
+            date: '1994',
+          },
+        ],
+      },
+      {
+        name: ' Юрий Викторович Тарич',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
+        cityBirth: 'Полоцк',
+        birthday: '12 (24) января 1885',
+        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        gallery: [
+          'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
+          'http://kino-rodina.by/tarich_.gif',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bust_to_Yuri_Tarich.JPG/300px-Bust_to_Yuri_Tarich.JPG',
+        ],
+        biography: [
+          {
+            action: 'Учился на юридическом факультете Московского университета ',
+            date: '1903—1905',
+          },
+          {
+            action: 'арестован как член Варшавской военно-революционной организации РСДРП и выслан в деревню Тара Тобольской губернии. ',
+            date: 'В декабре 1905',
+          },
+          {
+            action: 'был актером в Тобольске, затем в Чите, Липецке, Тамбове, Вильнюсе. Во время Первой мировой служил в действующей армии, где получил звание поручика.',
+            date: 'С 1907',
+          },
+          {
+            action: 'в Москве, актер и режиссер ряда ведущих театров (работал в том числе с В. Мейерхольдам)',
+            date: 'С 1917',
+          },
+          {
+            action: '— один из руководителей курсантского Театра Кремля.',
+            date: '1920—1924 ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Банда отца Кныша',
+            date: '1924 ',
+          },
+          {
+            name: 'враги',
+            date: '1924 ',
+          },
+          {
+            name: 'волки',
+            date: '1925',
+          },
+          {
+            name: 'Марокко',
+            date: '1925',
+          },
+          {
+            name: 'первые огни',
+            date: '1925',
+          },
+          {
+            name: 'Крылья холопа',
+            date: '1926',
+          },
+          {
+            name: 'Булат',
+            date: '1926',
+          },
+          {
+            name: 'Лесная быль',
+            date: '1926',
+          },
+          {
+            name: 'свои и чужие',
+            date: '1928',
+          },
+        ],
+      },
+    ],
+  },
+  by: {
+    producers: [
+      {
+        name: 'Віктар Нічыпаравіч Дашук',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
+        cityBirth: 'с. Валок Хойніцкага р-на Гомельскай вобл.',
+        birthday: '16 Верасеня 1938г.',
+        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        gallery: [
+          'https://upload.wikimedia.org/wikipedia/ru/3/37/Daschuk.jpg',
+          'https://www.dw.com/image/17619539_303.jpg',
+          'http://hojniki.ucoz.ru/pictures/dashuk_dlja_tehkstu_3a.jpg',
+          'http://hojniki.ucoz.ru/books/dashuk_partreht.jpg',
+        ],
+        biography: [
+          {
+            action: 'Скончыў факультэт журналістыкі БДУ',
+            date: '1960',
+          },
+          {
+            action: 'Скончыў вышэйшыя курсы сцэнарыстаў і рэжысёраў у Маскве',
+            date: '1967',
+          },
+          {
+            action: 'Лаўрэат прэміі Ленінскага камсамола Беларусі',
+            date: '1976',
+          },
+          {
+            action: 'Заслужаны дзеяч мастацтваў БССР',
+            date: '1977',
+          },
+          {
+            action: 'Кіраўнік майстэрні рэжысуры дакументальнага кіно',
+            date: '1989—1993',
+          },
+          {
+            action: 'Стварыў студыю «Спадар Д.»',
+            date: '1993—2005',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Дом ',
+            date: '1970',
+          },
+          {
+            name: 'Вар\'яцтву адважных',
+            date: '1970',
+          },
+          {
+            name: 'Даўным-даўно скончаны бой',
+            date: '1970',
+          },
+          {
+            name: 'Зязюля кукавала',
+            date: '1972',
+          },
+          {
+            name: 'Біяграфія паланэза ля мінор ',
+            date: '1973',
+          },
+          {
+            name: 'Я з вогненнай вёскі',
+            date: '1975-1978',
+          },
+          {
+            name: 'Развітанне',
+            date: '1980',
+          },
+          {
+            name: 'У вайны не жаночы твар',
+            date: '1980-1984',
+          },
+          {
+            name: 'Труба',
+            date: '1981',
+          },
+        ],
+      },
+      {
+        name: 'Міхаіл Мікалаевіч Пташук',
+        personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
+        cityBirth: 'в. Фядзюкі Ляхавіцкага р-на',
+        birthday: '28 студзеня 1943.',
+        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        gallery: [
+          'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
+          'https://novychas.by/images/image_5.jpg',
+          'https://novychas.by/images/hqdefault_1_logo_1.jpg',
+        ],
+        biography: [
+          {
+            action: 'Скончыў рэжысёрскі факультэт Тэатральнага вучылішча імя Б. Шчукіна',
+            date: '1967',
+          },
+          {
+            action: 'Прэмія Ленінскага камсамола',
+            date: '1980',
+          },
+          {
+            action: 'Заслужаны дзеяч мастацтваў БССР ',
+            date: '1982',
+          },
+          {
+            action: 'Дзяржаўная прэмія БССР ',
+            date: '1982',
+          },
+          {
+            action: 'Народны артыст БССР',
+            date: '1990',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Лясныя арэлі',
+            date: '1975 ',
+          },
+          {
+            name: 'Час выбраў нас',
+            date: '1978 ',
+          },
+          {
+            name: 'Вазьму твой боль',
+            date: '1980 ',
+          },
+          {
+            name: 'Чорны замак Альшанскі',
+            date: '1984 ',
+          },
+          {
+            name: 'Знак бяды',
+            date: '1986 ',
+          },
+          {
+            name: 'Наш браняпоезд',
+            date: '1988 ',
+          },
+          {
+            name: 'Кааператыў „Палітбюро“',
+            date: '',
+          },
+        ],
+      },
+      {
+        name: 'Мароз Уладзімір Вікенцьевіч',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
+        cityBirth: 'Косава, Івацэвіцкі раён',
+        birthday: '11 чэрвеня 1953',
+        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        gallery: [
+          'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
+          'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
+          'https://time.graphics/uploadedFiles/500/00/5f/005f0b02e6d44ad37ebae2d3b2772dc2.jpg',
+          'https://www.sb.by/upload/iblock/c02/c021bfd5414d2efb1a8baf92d52bd967.jpg',
+        ],
+        biography: [
+          {
+            action: 'Мароз Уладзімір, нарадзіўся ',
+            date: '11.06.1953',
+          },
+          {
+            action: 'Сярэднюю школу скончыў у вёсцы Даманава ',
+            date: '1970',
+          },
+          {
+            action: 'Скончыў архітэктурны факультэт Беларускага політэхнічнага інстытута',
+            date: '1975',
+          },
+          {
+            action: 'Літаратурны інстытут імя А.М.Горкага ў Маскве',
+            date: '1983',
+          },
+          {
+            action: 'Працаваў інжынерам на Вытворча-тэхнічным аб’яднанні “Інтэграл”',
+            date: '1975-1977',
+          },
+          {
+            action: 'вядучы рэдактар студыі “Летапіс” Нацыянальнай кінастудыі “Беларусьфільм”.',
+            date: 'З 2005 года ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'І хай нам вечным помнікам будзе',
+            date: '2006',
+          },
+          {
+            name: 'Нафтавая жамчужына Беларусі',
+            date: '2006',
+          },
+          {
+            name: 'Лазер Алфёрова',
+            date: '2008',
+          },
+          {
+            name: 'Міфалагемы Родзіна',
+            date: '2009',
+          },
+          {
+            name: 'Беларусьфільм 2010 ',
+            date: '2010',
+          },
+        ],
+      },
+      {
+        name: 'Віктар Цімафеевіч Тураў',
+        personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
+        cityBirth: 'Магілёў',
+        birthday: '25 кастрычніка 1936',
+        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        gallery: [
+          'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
+          'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
+          'http://gdb.rferl.org/B60F3D39-BE2A-4AEC-849F-67E0DBE42740_w610_r0_s.jpg',
+        ],
+        biography: [
+          {
+            action: 'рэжысёр кінастудыі «Беларусьфільм»',
+            date: 'З 1959',
+          },
+          {
+            action: 'Скончыў рэжысёрскі факультэт Усесаюзнага дзяржаўнага інстытута кінематаграфіі',
+            date: '1961',
+          },
+          {
+            action: 'першы сакратар праўлення Саюза кінематаграфістаў Беларусі',
+            date: '1976—1981',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Праз могілкі',
+            date: '1965',
+          },
+          {
+            name: 'Я родам з дзяцінства',
+            date: '1966',
+          },
+          {
+            name: 'Сыны ідуць у бой',
+            date: '1969',
+          },
+          {
+            name: 'Час яе сыноў',
+            date: '1974',
+          },
+          {
+            name: 'Высокая кроў',
+            date: '1989',
+          },
+          {
+            name: 'Чорны бусел',
+            date: '1993',
+          },
+          {
+            name: 'Шляхціч Завальня',
+            date: '1994',
+          },
+        ],
+      },
+      {
+        name: 'Юрый Віктаравіч Тарыч',
+        personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
+        cityBirth: 'Полацк',
+        birthday: '12 (24) студзеня 1885',
+        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        gallery: [
+          'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
+          'http://kino-rodina.by/tarich_.gif',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bust_to_Yuri_Tarich.JPG/300px-Bust_to_Yuri_Tarich.JPG',
+        ],
+        biography: [
+          {
+            action: 'Вучыўся на юрыдычным факультэце Маскоўскага ўніверсітэта ',
+            date: '1903—1905',
+          },
+          {
+            action: 'арыштаваны як член Варшаўскай ваенна-рэвалюцыйнай арганізацыі РСДРП і высланы ў вёску Тара Табольскай губерніі.',
+            date: 'У снежні 1905 ',
+          },
+          {
+            action: 'быў акцёрам у Табольску, затым у Чыце, Ліпецку, Тамбове, Вільні. Пад час Першай Сусветнай служыў у дзеючай арміі, дзе атрымаў званне паручніка.',
+            date: 'З 1907',
+          },
+          {
+            action: 'у Маскве, акцёр і рэжысёр шэрагу вядучых тэатраў (працаваў у тым ліку з У. Мейерхольдам).',
+            date: 'З 1917',
+          },
+          {
+            action: '— адзін з кіраўнікоў Курсанцкага тэатра Крамля.',
+            date: '1920—1924 ',
+          },
+        ],
+        map: '',
+        works: [
+          {
+            name: 'Банда бацькі Кныша',
+            date: '1924 ',
+          },
+          {
+            name: 'Ворагі',
+            date: '1924 ',
+          },
+          {
+            name: 'ваўкі',
+            date: '1925',
+          },
+          {
+            name: 'Марока',
+            date: '1925',
+          },
+          {
+            name: 'першыя агні ',
+            date: '1925',
+          },
+          {
+            name: 'Крылы халопа ',
+            date: '1926',
+          },
+          {
+            name: 'Булат',
+            date: '1926',
+          },
+          {
+            name: 'Лясная быль',
+            date: '1926',
+          },
+          {
+            name: 'свае і чужыя',
+            date: '1928',
+          },
+        ],
+      },
+    ],
+  },
+};

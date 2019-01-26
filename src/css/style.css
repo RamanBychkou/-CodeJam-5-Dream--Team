@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+.search-container {
+  display: flex;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+.search-container .search-view {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.search-container .search-view .search-view-title {
+  font-weight: 900;
+}
+.search-container .search-view label {
+  margin-top: 20px;
+}
+.search-container .search-view input {
+  margin: 5px 0;
+}
+.search-container .search-view .search-btn {
+  margin-top: 20px;
+  padding: 0.7em 1.5em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #0092cb;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s background;
+}
+.search-container .search-view .search-btn:hover {
+  background: #e85f4c;
+}
+.search-container .search-view .search-btn:active {
+  background: #980f00;
+}
+.search-container .searching-list {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 200px);
+  padding: 20px;
+}
+.search-container .searching-list .searching-item {
+  display: flex;
+  margin: 10px 5px;
+}
+.search-container .searching-list .searching-item img {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  object-fit: cover;
+}
+.search-container .searching-list .searching-item .info-view {
+  display: flex;
+  flex-direction: column;
+}
+.search-container .searching-list .searching-item .info-view .author-name {
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+.search-container .searching-list .searching-item .info-view .author-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.search-container .searching-list .searching-item .info-view .author-location {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
