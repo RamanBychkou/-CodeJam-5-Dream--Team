@@ -11,34 +11,40 @@
   <title>Culture portal of Belarus</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-          <div class="headline">
-            <h1>Режиссеры кино Беларуси</h1>
-          </div>
-          <div class="menu">
+<header>
+    <div class="wrapper">
+        <div class="headline">
+            <h1 id="pageHeader">Режиссеры кино Беларуси</h1>
+            <select id="selectLanguage">
+                <option value="russian">Русский</option>
+                <option value="belarus">Беларускі</option>
+                <option value="english">English</option>
+            </select>
+        </div>
+        <div class="menu">
             <div class="logo">
-              <img src="img/gerb.png" width="90" height="90" alt="logo">
+                <img src="img/gerb.png" width="90" height="90" alt="logo">
             </div>
             <nav>
-              <div class="nav-button"><a href="#">Главная</a></div>
-              <div class="nav-button"><a href="#">Режиссеры</a></div>
-              <div class="nav-button"><a href="#">Авторы</a></div>
+                <div class="nav-button"><a id="linkToMain" href="index.html">Главная</a></div>
+                <div class="nav-button"><a id="linkToProducers" href="producers.html">Режиссеры</a></div>
+                <div class="nav-button"><a id="linkToAuthors" href="index.html#about-us">Авторы</a></div>
             </nav>
-          </div>
-          <div class="header-stick"></div>
         </div>
-    </header>
+        <div class="header-stick"></div>
+    </div>
+</header>
     <main>
       <div class="wrapper">
         <section class="author">
           <div class="authorFoto" id="nameAuthor">
             <figure>
               <img src="http://localhost:9000/src/img/Roman.png" alt="">
+            </figure>
           </div>
           <div class="authorInfo description">
             <div class="title">
-              <h2>Name</h2>
+              <h2 id="authorName">Name</h2>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi possimus officia asperiores? 
               Doloribus at doloremque corporis voluptatibus ratione officia ex consectetur iste! Enim pariatur consectetur quibusdam repudiandae hic maxime debitis.</p>
@@ -46,39 +52,17 @@
         </section>
         <section>
           <div class="timeLineContainer">
-            <h2>Timeline</h2>
-            <div class="timeLine">
-              <div class="year">
-                <div class="content">
-                  <h3 id="date">1992</h3>
-                  <div class="textCont">
-                    <p id="action">1992</p>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="year">
-                  <div class="content">
-                    <h3 id="date">1992</h3>
-                    <div class="textCont">     
-                      <p id="action">1992</p>
-                    </div>
-                  </div>
-              </div>
-            </div>
+            <h2 id="textTimeLine">Timeline</h2>
+            <div class="timeLine" id="timeline"></div>
           </div>
         </section>
         <section class="mapCont">
-            <h2>Место рождения</h2>
-            <iframe id="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72309.17018509451!2d28.711650910649787!3d55.50342244224693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c48e045ec357b3%3A0x9b6f7ca39a88cc2b!2sPolatsk!5e0!3m2!1sen!2sby!4v1548507608227 
-        key=AIzaSyDHivjSfhWWNTvNfyg_-6BWNYI9HuqfGFY "
-        >
-      </iframe>
+            <h2 id="textPlace">Место рождения</h2>
+            <iframe id="map" src=""></iframe>
           </section>
         <section class="works">
-           <h2>Video</h2>
-           <button class="js-modal-btn">Open Video</button>
+           <h2 id="textVideo">Video</h2>
+           <button class="js-modal-btn" id="textBtnVideo">Open Video</button>
           <div class="worksWrapper">
                <div class="works-item">
                    <iframe id="ytplayer" type="text/html" width="400" height="300"
@@ -91,24 +75,8 @@
             
         </section>
         <section>
-          <h2>Gallery</h2>
-          <div class="gallery">
-            <div class="gallery-item">
-              <img src="http://hojniki.ucoz.ru/books/dashuk_partreht.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="http://hojniki.ucoz.ru/books/dashuk_partreht.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="http://hojniki.ucoz.ru/books/dashuk_partreht.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="http://hojniki.ucoz.ru/books/dashuk_partreht.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="http://hojniki.ucoz.ru/books/dashuk_partreht.jpg" alt="">
-            </div>
-          </div>
+          <h2 id="textGallery">Gallery</h2>
+          <div class="gallery" id="gallery"></div>
         </section>
         
       </div>
