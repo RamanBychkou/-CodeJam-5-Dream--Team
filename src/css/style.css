@@ -805,6 +805,9 @@ h2, h3 {
   font-family: Lato;
   color: rgb(200, 200, 200);
 }
+.description h2, .author-of-the-day h2, .list-of-works h2{
+  color: rgb(17, 83, 17);
+}
 .worksWrapper {
   display: flex;
   justify-content: space-around;
@@ -880,8 +883,7 @@ h2, h3 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  
-  margin: 0 auto 20px;
+  margin: 0 auto 15vh;
 }
 .gallery-item {
   width: 40%;

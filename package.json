@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --mode development",
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "fix-lint": "eslint -c .eslintrc.json ./src/**/*.js --fix"
   },
   "repository": {
     "type": "git",
