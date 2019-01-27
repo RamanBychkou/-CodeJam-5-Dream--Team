@@ -1,7 +1,7 @@
 import data from './data';
 import searchingItemTemplate from './searching-item.template';
-import './modal';
-import './map';
+// import './modal';
+// import './map';
 
 function getUrlVars() {
   const vars = {};
@@ -12,6 +12,8 @@ function getUrlVars() {
 }
 
 const { log } = console;
+const langOptions = ['ru', 'by', 'eng'];
+const selectLanguage = document.getElementById('selectLanguage');
 const ourLocation = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
 const searchingNameEl = document.getElementById('name');
 const locationEl = document.getElementById('location');
@@ -23,7 +25,7 @@ const linkToProducersEl = document.getElementById('linkToProducers');
 const linkToAuthorsEl = document.getElementById('linkToAuthors');
 const textWhoAreWeEl = document.getElementById('textWhoAreWe');
 const textAuthorOfDayEl = document.getElementById('textAuthorOfDay');
-const textFooterEl = document.getElementById('textFooter');
+const textAuthorsEl = document.getElementById('textAuthors');
 const textSearchingEl = document.getElementById('textSearching');
 const textNameEl = document.getElementById('textName');
 const textPlaceEl = document.getElementById('textPlace');
@@ -42,7 +44,7 @@ function changeLang(language) {
   if (linkToAuthorsEl) linkToAuthorsEl.innerText = data[language].environment.linkToAuthors;
   if (textWhoAreWeEl) textWhoAreWeEl.innerText = data[language].environment.textWhoAreWe;
   if (textAuthorOfDayEl) textAuthorOfDayEl.innerText = data[language].environment.textAuthorOfDay;
-  if (textFooterEl) textFooterEl.innerText = data[language].environment.textFooter;
+  if (textAuthorsEl) textAuthorsEl.innerText = data[language].environment.textAuthors;
   if (textSearchingEl) textSearchingEl.innerText = data[language].environment.textSearching;
   if (textNameEl) textNameEl.innerText = data[language].environment.textName;
   if (textPlaceEl) textPlaceEl.innerText = data[language].environment.textPlace;
@@ -92,8 +94,8 @@ function addPersons(persons = []) {
     const authorLocation = newItem.querySelector('.author-location');
     img.setAttribute('src', persons[i].personPhoto);
     authorName.innerText = persons[i].name;
-    authorPhotoLink.setAttribute('href', `person.html?lang=${lang}&name=${persons[i].name}`);
-    authorName.setAttribute('href', `person.html?lang=${lang}&name=${persons[i].name}`);
+    authorPhotoLink.setAttribute('href', `author.html?lang=${lang}&name=${persons[i].name}`);
+    authorName.setAttribute('href', `author.html?lang=${lang}&name=${persons[i].name}`);
     authorLocation.innerText = persons[i].cityBirth;
     searchingListEl.appendChild(newItem.children[0]);
   }
@@ -118,3 +120,9 @@ if (ourLocation === 'producers.html') {
   });
   findBtn.click();
 }
+
+// change language on change dropdownlist
+selectLanguage.onchange = () => {
+  lang = langOptions[selectLanguage.selectedIndex];
+  changeLang(langOptions[selectLanguage.selectedIndex]);
+};

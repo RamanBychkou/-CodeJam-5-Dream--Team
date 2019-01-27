@@ -6,16 +6,16 @@ const urls = [
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451960.75635366654!2d25.638775558347778!3d52.98184348039909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d8c36455cf6d71%3A0xc282e33ad6af2989!2sFeduki!5e0!3m2!1sen!2sby!4v1548507238821',
 ];
 
-const getRandom = () => {
-  let rand = Math.random() * 5;
-  rand = Math.floor(rand);
-  return rand;
-};
-
-const getMap = (urlMap) => {
-  const fullUrl = `${urlMap}key=AIzaSyDHivjSfhWWNTvNfyg_-6BWNYI9HuqfGFY`;
-  const element = document.getElementById('map');
-  element.setAttribute('src', fullUrl);
-};
-
-getMap(urls[getRandom()]);
+// const getRandom = () => {
+//   let rand = Math.random() * 5;
+//   rand = Math.floor(rand);
+//   return rand;
+// };
+//
+// const getMap = (urlMap) => {
+//   const fullUrl = `${urlMap}key=AIzaSyDHivjSfhWWNTvNfyg_-6BWNYI9HuqfGFY`;
+//   const element = document.getElementById('map');
+//   element.setAttribute('src', fullUrl);
+// };
+//
+// getMap(urls[getRandom()]);
