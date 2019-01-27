@@ -742,6 +742,10 @@ footer .fa-envelope:hover{
 h2 {
   margin: 10px;
   font-size: 2rem;
+  text-align: center;
+}
+.works {
+  padding: 10vh;
 }
 .worksWrapper {
   display: flex;
@@ -792,6 +796,10 @@ h2 {
     width: 100%;
   }
 }
+.mapCont iframe {
+  width: 200vh;
+  height: 150vh;
+}
 @media (max-width: 600px) {
   .year {
     width: 100%;
@@ -799,4 +807,29 @@ h2 {
   .content {
     width: 50%;
   }
+  .mapCont iframe {
+    width: 120vh;
+    height: 50vh;
+  }
+}
+.mapCont {
+  text-align: center;
+}
+.gallery {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+  margin: 0 auto
+}
+.gallery-item {
+  width: 100vh;
+  height: 80vh;
+  margin: 5vh;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
 }
