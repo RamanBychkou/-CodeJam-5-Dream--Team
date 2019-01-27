@@ -648,3 +648,155 @@ footer .fa-envelope:hover{
         padding-left: 0;
     }
 }
+
+/* Author page */
+.wrapper .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+} 
+.author {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 10px
+}
+.authorFoto {
+  margin-right: 10px;
+}
+.authorInfo {
+  width: 50%;
+}
+.timeLine {
+  position: relative;
+  margin: 10vh;
+}
+.timeLine::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: #fff;
+}
+.content {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.content::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 360px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.year:nth-child(odd) .content {
+  justify-content: flex-start;
+  text-align: left;
+}
+.year:nth-child(even) .content {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.year {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  position: relative
+}
+.year:nth-child(odd) {
+  align-items: flex-end;
+}
+.year:nth-child(even) {
+  align-items: flex-start;
+  text-align: right;
+}
+.content .textCont {
+  visibility: hidden;
+}
+.content:hover .textCont {
+  visibility: visible;
+}
+.textCont {
+  margin-top: 5vh;
+  padding: 2vh 1vw;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: rgb(17, 83, 17);
+  border: solid white 5px;
+  border-radius: 5px;
+}
+.works, .timeLineContainer {
+  text-align: center;
+}
+h2 {
+  margin: 10px;
+  font-size: 2rem;
+}
+.worksWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.works-item {
+  display: flex;
+  align-items: end;
+  display: none;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .works-item {
+  display: block;
+}
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background: none;
+  color: white;
+  border: none;
+}
+@media (max-width: 1000px) {
+  .year {
+    width: 500px;
+  }
+  .content {
+    width: 230px;
+  }
+}
+@media (max-width: 700px) {
+  .author {
+    justify-content: center;
+  }
+  .authorInfo {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .year {
+    width: 100%;
+  }
+  .content {
+    width: 50%;
+  }
+}
