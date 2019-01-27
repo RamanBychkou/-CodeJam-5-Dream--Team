@@ -1,7 +1,7 @@
 import data from './data';
 import searchingItemTemplate from './searching-item.template';
-// import './modal';
-// import './map';
+import timelineItemTemplate from './timeline-item.template';
+import './modal';
 
 function getUrlVars() {
   const vars = {};
@@ -34,6 +34,12 @@ const author1El = document.getElementById('author1');
 const author2El = document.getElementById('author2');
 const author3El = document.getElementById('author3');
 const author4El = document.getElementById('author4');
+const authorNameEl = document.getElementById('authorName');
+const textTimeLineEl = document.getElementById('textTimeLine');
+const textVideoEl = document.getElementById('textVideo');
+const textBtnVideoEl = document.getElementById('textBtnVideo');
+const textGalleryEl = document.getElementById('textGallery');
+const timelineEl = document.getElementById('timeline');
 let { lang } = getUrlVars();
 
 function changeLang(language) {
@@ -63,6 +69,23 @@ function changeLang(language) {
   if (author2El) author2El.innerText = data[language].environment.author2;
   if (author3El) author3El.innerText = data[language].environment.author3;
   if (author4El) author4El.innerText = data[language].environment.author4;
+  if (textTimeLineEl) textTimeLineEl.innerText = data[language].environment.textTimeLine;
+  if (textVideoEl) textVideoEl.innerText = data[language].environment.textVideo;
+  if (textBtnVideoEl) textBtnVideoEl.innerText = data[language].environment.textBtnVideo;
+  if (textGalleryEl) textGalleryEl.innerText = data[language].environment.textGallery;
+}
+
+function padTimeline(element, template, obj) {
+  clearElem(element);
+  obj.biography.forEach(item => {
+    const templateEl = document.createElement('div');
+    templateEl.innerHTML = template;
+    const date = templateEl.querySelector('.date');
+    const action = templateEl.querySelector('.action');
+    date.innerText = item.date;
+    action.innerText = item.action;
+    element.appendChild(templateEl);
+  });
 }
 
 function findPersons(obj, language, name = '', location = '') {
@@ -79,10 +102,10 @@ function findPersons(obj, language, name = '', location = '') {
   return list;
 }
 
-function clearSearchingList() {
-  const len = searchingListEl.children.length;
+function clearElem(element) {
+  const len = element.children.length;
   for (let i = 0; i < len; i += 1) {
-    searchingListEl.children[0].remove();
+    element.children[0].remove();
   }
 }
 
@@ -110,14 +133,29 @@ function addPersons(persons = []) {
   }
 }
 
+function addStaticAuthorData(author) {
+  const mapEl = document.getElementById('map');
+  const gallery = document.getElementById('gallery');
+  const authorName = decodeURI(getUrlVars().name);
+  const authorObj = findPersons(data, lang, authorName)[0];
+  if (authorNameEl) authorNameEl.innerText = authorObj.name;
+  mapEl.setAttribute('src', author.map);
+  author.gallery.forEach((item, index) => {
+    const galleryItem = document.createElement('div');
+    const img = document.createElement('img');
+    galleryItem.setAttribute('class', 'gallery-item');
+    img.setAttribute('src', author.gallery[index]);
+    galleryItem.appendChild(img);
+    gallery.appendChild(galleryItem);
+  });
+  padTimeline(timelineEl, timelineItemTemplate, authorObj);
+}
+
 if (!lang) lang = 'ru';
-changeLang(lang);
 
 if (ourLocation === 'producers.html') {
-  // if (getUrlVars().name) searchingNameEl.value = decodeURI(getUrlVars().name);
-  changeLang(lang);
   findBtn.addEventListener('click', () => {
-    clearSearchingList();
+    clearElem(searchingListEl);
     const persons = findPersons(data, lang, searchingNameEl.value, locationEl.value);
     addPersons(persons);
   });
@@ -130,9 +168,16 @@ if (ourLocation === 'producers.html') {
   findBtn.click();
 }
 
+if (ourLocation === 'author.html') {
+  const name = decodeURI(getUrlVars().name);
+  const person = findPersons(data, lang, name)[0];
+  addStaticAuthorData(person);
+}
+
+changeLang(lang);
+
 // change language on change dropdownlist
 selectLanguage.onchange = () => {
   lang = langOptions[selectLanguage.selectedIndex];
   changeLang(langOptions[selectLanguage.selectedIndex]);
-  log(123);
 };

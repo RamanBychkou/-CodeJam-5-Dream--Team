@@ -20,6 +20,10 @@ export default {
       textPlace: 'City / place of born',
       textBtnSearch: 'Find',
       textUnluckyResult: 'No one found',
+      textTimeLine: 'timeline',
+      textVideo: 'Video',
+      textBtnVideo: 'open video',
+      textGallery: 'Gallery',
     },
     producers: [
       {
@@ -380,6 +384,10 @@ export default {
       textPlace: 'Город / место рождения',
       textBtnSearch: 'Найти',
       textUnluckyResult: 'Ничего не найдено',
+      textTimeLine: 'Хронология',
+      textVideo: 'Видео',
+      textBtnVideo: 'Открыть видео',
+      textGallery: 'Галерея',
     },
     producers: [
       {
@@ -740,6 +748,10 @@ export default {
       textPlace: 'Горад / месца нараджэння',
       textBtnSearch: 'Знайсці',
       textUnluckyResult: 'Нічога не знойдзена',
+      textTimeLine: 'Храналогiя',
+      textVideo: 'Вiдыё',
+      textBtnVideo: 'Адчынiть вiдыё',
+      textGallery: 'галерэя',
     },
     producers: [
       {
