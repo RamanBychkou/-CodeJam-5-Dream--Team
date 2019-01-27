@@ -1,5 +1,27 @@
 export default {
   eng: {
+    environment: {
+      pageTitle: 'Culture portal of Belarus',
+      pageHeader: 'Producers cinema of Belarus',
+      linkToMain: 'Main',
+      linkToProducers: 'Producers',
+      linkToAuthors: 'Authors',
+      titleWhoAreWe: 'Who Are We',
+      textWhoAreWe: 'This portal provides information about the most famous film Directors of the Republic of Belarus. Using this portal, please note that this resource was created on the knees, and nevertheless contains translations into Belarusian and English.You can use search by filmmakers.\n' +
+      ' This resource provides extensive information on the most famous film Directors, namely: you can read the biography, see the photo gallery, also see the location where a certain author worked, and in most cases see the works on which they worked.\n',
+      textAuthorOfDay: 'Author of the day',
+      textAuthors: 'Authors',
+      author1: 'Andrei Saiko',
+      author2: 'Aleh Sazonik',
+      author3: 'Roman Bychckov',
+      author4: 'Yahor Remizau',
+      textFooter: '&copy; 2019 DREAM TEAM',
+      textSearching: 'Search',
+      textName: 'Name:',
+      textPlace: 'City / place of born',
+      textBtnSearch: 'Find',
+      textUnluckyResult: 'No one found',
+    },
     producers: [
       {
         name: 'Victor N. Dashuk',
@@ -82,7 +104,7 @@ export default {
       {
         name: 'Ptashuk, Mikhail Nikolaevich',
         personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
-        cityBirth: 'В. Федюки Ляховичского р-на',
+        cityBirth: 'B. Feduki Lahovich district',
         birthday: '28 января 1943.',
         video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
         gallery: [
@@ -339,6 +361,28 @@ export default {
     ],
   },
   ru: {
+    environment: {
+      pageTitle: 'Портал культуры Беларуси',
+      pageHeader: 'Режисёры кино Беларуси',
+      linkToMain: 'Главная',
+      linkToProducers: 'Режисёры',
+      linkToAuthors: 'Авторы',
+      titleWhoAreWe: 'Кто мы',
+      textWhoAreWe: 'На данном портале представлена информация о наиболее известных кинорежиссеров Республики Беларусь. Пользуясь данным порталом прошу заметить что данный ресурс создавался на коленках, и тем не менее содержит переводы на белорусский и английский языки.Вы можете использовать поиск по кинорежиссерам.\n' +
+      ' Данный ресурс предоставляет обширную информацию по наиболее известным кинорежиссерам, а именно: вы можете ознакомиться с биографией, посмотреть фотогалерею, также увидеть локацию где работал определенный автор, и в большинстве случаев посмотреть  произведения на которыми они трудились.\n',
+      textAuthorOfDay: 'Автор дня',
+      textAuthors: 'Авторы',
+      author1: 'Андрей Сайко',
+      author2: 'Олег Сазоник',
+      author3: 'Роман Бучков',
+      author4: 'Егор Ремизов',
+      textFooter: '&copy; 2019 Команда мечты',
+      textSearching: 'Поиск',
+      textName: 'Имя:',
+      textPlace: 'Город / место рождения',
+      textBtnSearch: 'Найти',
+      textUnluckyResult: 'Ничего не найдено',
+    },
     producers: [
       {
         name: 'Виктор Никифорович Дашук',
@@ -678,6 +722,28 @@ export default {
     ],
   },
   by: {
+    environment: {
+      pageTitle: 'Партал культуры Беларусі',
+      pageHeader: 'Вытворцы кіно Беларусі',
+      linkToMain: 'Галоуная',
+      linkToProducers: 'Рэжысёры',
+      linkToAuthors: 'Аўтары',
+      titleWhoAreWe: 'Хто мы',
+      textWhoAreWe: 'На дадзеным партале прадстаўлена інфармацыя аб найбольш вядомых кінарэжысёраў Рэспублікі Беларусь. Карыстаючыся дадзеных парталам прашу заўважыць што дадзены рэсурс ствараўся на каленках, і тым не менш утрымлівае пераклады на беларускую і англійскую мовы.Вы можаце выкарыстоўваць пошук па кінарэжысёрам.\n' +
+      ' Дадзены рэсурс прадастаўляе шырокую інфармацыю па найбольш вядомым кінарэжысёрам, а менавіта: вы можаце азнаёміцца з біяграфіяй, паглядзець фотагалерэю, таксама ўбачыць лакацыі дзе працаваў пэўны аўтар, і ў большасці выпадкаў паглядзець творы на якімі яны працавалі.\n',
+      textAuthorOfDay: 'Аўтар дня',
+      textAuthors: 'Аўтары',
+      author1: 'Андрэй Сайка',
+      author2: 'Алег Сазоннiк',
+      author3: 'Раман Бучкоу',
+      author4: 'Ягор Рэмiзоу',
+      textFooter: '&copy; 2019 Каманда мары',
+      textSearching: 'Пошук',
+      textName: 'Імя:',
+      textPlace: 'Горад / месца нараджэння',
+      textBtnSearch: 'Знайсці',
+      textUnluckyResult: 'Нічога не знойдзена',
+    },
     producers: [
       {
         name: 'Віктар Нічыпаравіч Дашук',

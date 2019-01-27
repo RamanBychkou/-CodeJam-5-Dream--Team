@@ -11,16 +11,16 @@
 <header>
     <div class="wrapper">
         <div class="headline">
-            <h1>Режиссеры кино Беларуси</h1>
+            <h1 id="pageHeader">Режиссеры кино Беларуси</h1>
         </div>
         <div class="menu">
             <div class="logo">
                 <img src="img/gerb.png" width="90" height="90" alt="logo">
             </div>
             <nav>
-                <div class="nav-button"><a href="#">Главная</a></div>
-                <div class="nav-button"><a href="#">Режиссеры</a></div>
-                <div class="nav-button"><a href="#">Авторы</a></div>
+                <div class="nav-button"><a id="linkToMain" href="index.html">Главная</a></div>
+                <div class="nav-button"><a id="linkToProducers" href="producers.html">Режиссеры</a></div>
+                <div class="nav-button"><a id="linkToAuthors" href="index.html#about-us">Авторы</a></div>
             </nav>
         </div>
         <div class="header-stick"></div>
@@ -29,10 +29,10 @@
 <main>
     <section class="search-container">
         <div class="search-view">
-            <p class="search-view-title" id="search-view-title">Поиск</p>
-            <label for="name" id="name-label">Имя:</label>
+            <p class="search-view-title" id="textSearching">Поиск</p>
+            <label for="name" id="textName">Имя:</label>
             <input type="text" id="name">
-            <label for="location" id="location-label">Город / место рождения:</label>
+            <label for="location" id="textPlace">Город / место рождения:</label>
             <input type="text" id="location">
             <div class="search-btn" id="find-btn">Найти</div>
         </div>
@@ -43,7 +43,7 @@
 <footer>
     <div class="wrapper">
         <div class="flex-conteiner">
-            <div class="footer-content">
+            <div class="footer-content" id="textFooter">
                 &copy; 2019 DREAM TEAM
             </div>
             <div>
