@@ -1,5 +1,7 @@
 import data from './data';
 import searchingItemTemplate from './searching-item.template';
+import './modal';
+import './map';
 
 function getUrlVars() {
   const vars = {};
