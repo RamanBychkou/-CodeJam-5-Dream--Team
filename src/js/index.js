@@ -25,6 +25,7 @@ const linkToProducersEl = document.getElementById('linkToProducers');
 const linkToAuthorsEl = document.getElementById('linkToAuthors');
 const textWhoAreWeEl = document.getElementById('textWhoAreWe');
 const textAuthorOfDayEl = document.getElementById('textAuthorOfDay');
+const biographyTextEl = document.getElementById('biographyText');
 const textAuthorsEl = document.getElementById('textAuthors');
 const textSearchingEl = document.getElementById('textSearching');
 const textNameEl = document.getElementById('textName');
@@ -58,7 +59,12 @@ function changeLang(language) {
     linkToAuthorsEl.setAttribute('href', `index.html#about-us?lang=${lang}`);
   }
   if (textWhoAreWeEl) textWhoAreWeEl.innerText = data[language].environment.textWhoAreWe;
-  if (textAuthorOfDayEl) textAuthorOfDayEl.innerText = data[language].environment.textAuthorOfDay;
+  if (textAuthorOfDayEl) {
+    const max = data[language].producers.length;
+    const randomNumber = Math.floor(Math.random() * max);
+    textAuthorOfDayEl.innerText = `${data[language].environment.textAuthorOfDay} - ${data[language].producers[randomNumber].name}`;
+    biographyTextEl.innerText = data[language].producers[randomNumber].biographyText;
+  }
   if (textAuthorsEl) textAuthorsEl.innerText = data[language].environment.textAuthors;
   if (textSearchingEl) textSearchingEl.innerText = data[language].environment.textSearching;
   if (textNameEl) textNameEl.innerText = data[language].environment.textName;
@@ -136,9 +142,11 @@ function addPersons(persons = []) {
 function addStaticAuthorData(author) {
   const mapEl = document.getElementById('map');
   const gallery = document.getElementById('gallery');
+  const personPhotoEl = document.getElementById('personPhoto');
   const authorName = decodeURI(getUrlVars().name);
   const authorObj = findPersons(data, lang, authorName)[0];
   if (authorNameEl) authorNameEl.innerText = authorObj.name;
+  if (personPhotoEl) personPhotoEl.setAttribute('src', authorObj.personPhoto);
   mapEl.setAttribute('src', author.map);
   author.gallery.forEach((item, index) => {
     const galleryItem = document.createElement('div');
