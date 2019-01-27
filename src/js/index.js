@@ -39,9 +39,18 @@ let { lang } = getUrlVars();
 function changeLang(language) {
   document.title = data[language].environment.pageTitle;
   if (pageHeaderEl) pageHeaderEl.innerText = data[language].environment.pageHeader;
-  if (linkToMainEl) linkToMainEl.innerText = data[language].environment.linkToMain;
-  if (linkToProducersEl) linkToProducersEl.innerText = data[language].environment.linkToProducers;
-  if (linkToAuthorsEl) linkToAuthorsEl.innerText = data[language].environment.linkToAuthors;
+  if (linkToMainEl) {
+    linkToMainEl.innerText = data[language].environment.linkToMain;
+    linkToMainEl.setAttribute('href', `index.html?lang=${lang}`);
+  }
+  if (linkToProducersEl) {
+    linkToProducersEl.innerText = data[language].environment.linkToProducers;
+    linkToProducersEl.setAttribute('href', `producers.html?lang=${lang}`);
+  }
+  if (linkToAuthorsEl) {
+    linkToAuthorsEl.innerText = data[language].environment.linkToAuthors;
+    linkToAuthorsEl.setAttribute('href', `index.html#about-us?lang=${lang}`);
+  }
   if (textWhoAreWeEl) textWhoAreWeEl.innerText = data[language].environment.textWhoAreWe;
   if (textAuthorOfDayEl) textAuthorOfDayEl.innerText = data[language].environment.textAuthorOfDay;
   if (textAuthorsEl) textAuthorsEl.innerText = data[language].environment.textAuthors;
@@ -125,4 +134,5 @@ if (ourLocation === 'producers.html') {
 selectLanguage.onchange = () => {
   lang = langOptions[selectLanguage.selectedIndex];
   changeLang(langOptions[selectLanguage.selectedIndex]);
+  log(123);
 };
