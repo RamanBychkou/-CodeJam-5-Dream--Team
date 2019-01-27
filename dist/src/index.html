@@ -13,16 +13,16 @@
     <header>
         <div class="wrapper">
           <div class="headline">
-            <h1>Режиссеры кино Беларуси</h1>
+            <h1 id="pageHeader">Режиссеры кино Беларуси</h1>
           </div>
           <div class="menu">
             <div class="logo">
               <img src="img/gerb.png" width="90" height="90" alt="logo">
             </div>
             <nav>
-              <div class="nav-button"><a href="#">Главная</a></div>
-              <div class="nav-button"><a href="#">Режиссеры</a></div>
-              <div class="nav-button"><a href="#">Авторы</a></div>
+              <div class="nav-button"><a id="linkToMain" href="index.html">Главная</a></div>
+              <div class="nav-button"><a id="linkToProducers" href="producers.html">Режиссеры</a></div>
+              <div class="nav-button"><a id="linkToAuthors" href="#about-us">Авторы</a></div>
             </nav>
           </div>
           <div class="header-stick"></div>
@@ -32,8 +32,9 @@
       <div class="wrapper">
         <article class="description">
           <div class="description-content">
-            <h2>Who we are</h2>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            <h2 id="titleWhoAreWe">Who we are</h2>
+              <p id="textWhoAreWe">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               It has survived not only five centuries, but also the leap into electronic typesetting, 
@@ -54,10 +55,11 @@
               remaining essentially unchanged. 
               It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
           </div>
         </article>
         <article class="author-of-the-day">
-          <h2>Author of the day</h2>
+          <h2 id="textAuthorOfDay">Author of the day</h2>
           <div class="author-of-the-day-content">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -77,13 +79,13 @@
           </div>
         </article>
       </div>
-      <article class="about-us">
+      <article class="about-us" id="about-us">
             <div class="wrapper">
-              <h2>Authors</h2>
+              <h2 id="textAuthors">Authors</h2>
               <div class="about-us-our-team">
                 <div class="about-us-our-team-item andrey">
                   <div class="photo"></div>
-                  <p class="profession">Andrei Saiko</p>
+                  <p class="profession" id="author1">Andrei Saiko</p>
                   <div class="social">
                     <a href="https://www.facebook.com/"><i class="fab fa-skype"></i></a>
                     <a href="https://twitter.com/"><i class="fas fa-envelope"></i></a>
@@ -92,7 +94,7 @@
                 </div>
                 <div class="about-us-our-team-item oleg">
                   <div class="photo"></div>
-                  <p class="profession">Aleh Sazonik</p>
+                  <p class="profession" id="author2">Aleh Sazonik</p>
                   <div class="social">
                     <a href="https://www.facebook.com/"><i class="fab fa-skype"></i></a>
                     <a href="https://twitter.com/"><i class="fas fa-envelope"></i></a>
@@ -101,7 +103,7 @@
                 </div>
                 <div class="about-us-our-team-item roman">
                   <div class="photo"></div>
-                  <p class="profession">Roman Bychckov</p>
+                  <p class="profession" id="author3">Roman Bychckov</p>
                   <div class="social">
                     <a href="https://www.facebook.com/"><i class="fab fa-skype"></i></a>
                     <a href="https://twitter.com/"><i class="fas fa-envelope"></i></a>
@@ -110,7 +112,7 @@
                 </div>
                 <div class="about-us-our-team-item yegor">
                     <div class="photo"></div>
-                    <p class="profession">Yahor Remizau</p>
+                    <p class="profession" id="author4">Yahor Remizau</p>
                     <div class="social">
                       <a href="https://www.facebook.com/"><i class="fab fa-skype"></i></a>
                       <a href="https://twitter.com/"><i class="fas fa-envelope"></i></a>
@@ -124,7 +126,7 @@
   <footer>
     <div class="wrapper">
       <div class="flex-conteiner">
-        <div class="footer-content">
+        <div class="footer-content" id="textFooter">
            &copy; 2019 DREAM TEAM
         </div>
         <div>
@@ -133,6 +135,6 @@
       </div>
     </div>
   </footer>
-  <script src='js/main.js'></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
