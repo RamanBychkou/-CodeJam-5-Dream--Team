@@ -226,7 +226,7 @@ nav a{
 /* footer */
 
 footer{
-  height: 10vh;
+  min-height: calc(10vh - 10vh);
   background-color: #003f62;
 }
 footer div{
