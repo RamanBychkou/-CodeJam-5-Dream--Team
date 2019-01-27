@@ -67,6 +67,10 @@
 
 /* ////////////////////The end  main /////////////////// */
 
+.footer-discription {
+    background-color: aqua;
+}
+
 
 
 @media (max-width:320px)  { 
