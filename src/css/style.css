@@ -713,6 +713,34 @@ footer .fa-envelope:hover{
   height: 100%;
   background-color: #fff;
 }
+
+/* RemziQ */
+/* List of works */
+
+.list-of-works{
+  min-height: 20vh;
+  max-width: 80%;
+  margin: 0 auto 5vh;
+  padding: 1vh 1vw;
+  background-color: white;
+  color: #2d632d;
+}
+.list-of-works .flex-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.list-of-works .flex-item-works{
+  width: 40%;
+  text-align: center;
+}
+.list-of-works h2{
+  text-align: center;
+}
+
+/* end list of works */
+
 .content {
   width: 50%;
   padding: 10px;
