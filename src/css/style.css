@@ -353,7 +353,7 @@ footer .fa-envelope:hover{
     font-size: 1.4rem;
   }
   header{
-    height: 58vh;
+    height: 90vh;
   }
   .menu{
     flex-direction: column;
@@ -382,13 +382,14 @@ footer .fa-envelope:hover{
     border-top-width: 5px;
   }
   footer .flex-conteiner{
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
     font-size: 12px;
+    padding: 1vh;
   }
   footer div{
     padding-top: 2vh;
-    height: 3vh!important;
     line-height: 3vh!important;
   }
 }
@@ -800,6 +801,28 @@ h2 {
   width: 200vh;
   height: 150vh;
 }
+.mapCont {
+  text-align: center;
+}
+.gallery {
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  
+  margin: 0 auto
+}
+.gallery-item {
+  width: 70vh;
+  height: 40vh;
+  margin: 2vh;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   .year {
     width: 100%;
@@ -811,25 +834,12 @@ h2 {
     width: 120vh;
     height: 50vh;
   }
+  .gallery {
+    justify-content: center;
+  }
 }
-.mapCont {
-  text-align: center;
-}
-.gallery {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  
-  margin: 0 auto
-}
-.gallery-item {
-  width: 100vh;
-  height: 80vh;
-  margin: 5vh;
-}
-.gallery-item img {
-  width: 100%;
-  height: 100%;
+@media (min-width: 1000px) {
+  .gallery {
+    width: 900px;
+  }
 }
