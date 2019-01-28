@@ -1,6 +1,7 @@
 import data from './data';
 import searchingItemTemplate from './searching-item.template';
 import timelineItemTemplate from './timeline-item.template';
+import workListItem from './work-list-item.template';
 import './modal';
 
 function getUrlVars() {
@@ -38,9 +39,12 @@ const author4El = document.getElementById('author4');
 const authorNameEl = document.getElementById('authorName');
 const textTimeLineEl = document.getElementById('textTimeLine');
 const textVideoEl = document.getElementById('textVideo');
+const linkToVideo = document.getElementById('ytplayer');
 const textBtnVideoEl = document.getElementById('textBtnVideo');
 const textGalleryEl = document.getElementById('textGallery');
 const timelineEl = document.getElementById('timeline');
+const textOfWorksEl = document.getElementById('textOfWorks');
+const workListEl = document.getElementById('workList');
 let { lang } = getUrlVars();
 
 function changeLang(language) {
@@ -79,6 +83,7 @@ function changeLang(language) {
   if (textVideoEl) textVideoEl.innerText = data[language].environment.textVideo;
   if (textBtnVideoEl) textBtnVideoEl.innerText = data[language].environment.textBtnVideo;
   if (textGalleryEl) textGalleryEl.innerText = data[language].environment.textGallery;
+  if (textOfWorksEl) textOfWorksEl.innerText = data[language].environment.textOfWorks;
 }
 
 function padTimeline(element, template, obj) {
@@ -146,6 +151,8 @@ function addStaticAuthorData(author) {
   const authorName = decodeURI(getUrlVars().name);
   const authorObj = findPersons(data, lang, authorName)[0];
   if (authorNameEl) authorNameEl.innerText = authorObj.name;
+  if (linkToVideo) linkToVideo.setAttribute('src', authorObj.video);
+  if (biographyTextEl) biographyTextEl.innerText = authorObj.biographyText;
   if (personPhotoEl) personPhotoEl.setAttribute('src', authorObj.personPhoto);
   mapEl.setAttribute('src', author.map);
   author.gallery.forEach((item, index) => {
@@ -155,6 +162,17 @@ function addStaticAuthorData(author) {
     img.setAttribute('src', author.gallery[index]);
     galleryItem.appendChild(img);
     gallery.appendChild(galleryItem);
+  });
+  author.works.forEach(item => {
+    let templateForWorks = document.createElement('div');
+    templateForWorks.innerHTML = workListItem;
+    templateForWorks = templateForWorks.children[0];
+    const actionText = templateForWorks.querySelector('div:first-child');
+    const dateText = templateForWorks.querySelector('div:last-child');
+    log(templateForWorks)
+    actionText.innerText = item.name;
+    dateText.innerText = item.date;
+    workListEl.appendChild(templateForWorks);
   });
   padTimeline(timelineEl, timelineItemTemplate, authorObj);
 }

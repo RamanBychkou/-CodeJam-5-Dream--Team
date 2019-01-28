@@ -23,6 +23,7 @@ export default {
       textVideo: 'Video',
       textBtnVideo: 'open video',
       textGallery: 'Gallery',
+      textOfWorks: 'List of works',
     },
     producers: [
       {
@@ -30,7 +31,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
         cityBirth: 'S. Portage hoyniksky district Gomel region.',
         birthday: '16 September 1938.',
-        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        video: 'https://www.youtube.com/embed/M2IJK0eWGfM',
         gallery: [
           'http://hojniki.ucoz.ru/books/dashuk_partreht.jpg',
           'http://hojniki.ucoz.ru/pictures/dashuk_dlja_tehkstu_3a.jpg',
@@ -109,7 +110,7 @@ export default {
         personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
         cityBirth: 'B. Feduki Lahovich district',
         birthday: '28 января 1943.',
-        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        video: 'https://www.youtube.com/embed/ELRs1o4Atq4',
         gallery: [
           'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
           'https://novychas.by/images/image_5.jpg',
@@ -175,7 +176,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
         cityBirth: 'Kossovo, Ivatsevichi district',
         birthday: '11 June 1953',
-        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        video: 'https://www.youtube.com/embed/j05sTGoFxXo',
         gallery: [
           'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
           'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
@@ -238,7 +239,7 @@ export default {
         personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
         cityBirth: 'Mogilev',
         birthday: '25 October 1936',
-        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        video: 'https://www.youtube.com/embed/pTwHQE4NYJo',
         gallery: [
           'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
           'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
@@ -296,7 +297,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
         cityBirth: 'Polotsk',
         birthday: '12 (24) January 1885',
-        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        video: 'https://www.youtube.com/embed/n6l17pIZdTg',
         gallery: [
           'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
           'http://kino-rodina.by/tarich_.gif',
@@ -391,6 +392,7 @@ export default {
       textVideo: 'Видео',
       textBtnVideo: 'Открыть видео',
       textGallery: 'Галерея',
+      textOfWorks: 'Список работ',
     },
     producers: [
       {
@@ -398,7 +400,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
         cityBirth: 'с. Волок Хойникского р - на Гомельской обл.',
         birthday: '16 сентября 1938г.',
-        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        video: 'https://www.youtube.com/embed/M2IJK0eWGfM',
         gallery: [
           'http://hojniki.ucoz.ru/books/dashuk_partreht.jpg',
           'http://hojniki.ucoz.ru/pictures/dashuk_dlja_tehkstu_3a.jpg',
@@ -477,7 +479,7 @@ export default {
         personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
         cityBirth: 'В. Федюки Ляховичского р-на',
         birthday: '28 января 1943.',
-        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        video: 'https://www.youtube.com/embed/ELRs1o4Atq4',
         gallery: [
           'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
           'https://novychas.by/images/image_5.jpg',
@@ -543,7 +545,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
         cityBirth: 'Коссово, Ивацевичский район',
         birthday: '11 июня 1953',
-        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        video: 'https://www.youtube.com/embed/j05sTGoFxXo',
         gallery: [
           'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
           'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
@@ -606,7 +608,7 @@ export default {
         personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
         cityBirth: 'Могилев ',
         birthday: '25 октября 1936',
-        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        video: 'https://www.youtube.com/embed/pTwHQE4NYJo',
         gallery: [
           'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
           'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
@@ -664,7 +666,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
         cityBirth: 'Полоцк',
         birthday: '12 (24) января 1885',
-        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        video: 'https://www.youtube.com/embed/n6l17pIZdTg',
         gallery: [
           'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
           'http://kino-rodina.by/tarich_.gif',
@@ -759,6 +761,7 @@ export default {
       textVideo: 'Вiдыё',
       textBtnVideo: 'Адчынiть вiдыё',
       textGallery: 'галерэя',
+      textOfWorks: 'спiс працы',
     },
     producers: [
       {
@@ -766,7 +769,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/GoEast_2014_Viktar_Dashuk_2.jpg/800px-GoEast_2014_Viktar_Dashuk_2.jpg',
         cityBirth: 'с. Валок Хойніцкага р-на Гомельскай вобл.',
         birthday: '16 Верасеня 1938г.',
-        video: 'https://www.youtube.com/watch?v=M2IJK0eWGfM',
+        video: 'https://www.youtube.com/embed/M2IJK0eWGfM',
         gallery: [
           'https://upload.wikimedia.org/wikipedia/ru/3/37/Daschuk.jpg',
           'https://www.dw.com/image/17619539_303.jpg',
@@ -845,7 +848,7 @@ export default {
         personPhoto: 'https://belprauda.org/wp-content/uploads/2017/10/juri1509_3id0c_logo-768x502.jpg',
         cityBirth: 'в. Фядзюкі Ляхавіцкага р-на',
         birthday: '28 студзеня 1943.',
-        video: 'https://www.youtube.com/watch?v=ELRs1o4Atq4',
+        video: 'https://www.youtube.com/embed/ELRs1o4Atq4',
         gallery: [
           'https://baj.by/sites/default/files/event/preview/maxresdefault_2.jpg',
           'https://novychas.by/images/image_5.jpg',
@@ -911,7 +914,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vladimir_Moroz.JPG',
         cityBirth: 'Косава, Івацэвіцкі раён',
         birthday: '11 чэрвеня 1953',
-        video: 'https://www.youtube.com/watch?v=j05sTGoFxXo',
+        video: 'https://www.youtube.com/embed/j05sTGoFxXo',
         gallery: [
           'https://lit-bel.org/assets/images/2015/News/maroz_07.JPG',
           'https://archive.li/Rr1E2/e33ce6d2b532e2ad8aebca0c3b5f506d5e745a3f.jpg',
@@ -974,7 +977,7 @@ export default {
         personPhoto: 'https://gdb.rferl.org/A6BD8A06-B0CF-4DE2-8484-594F3C96452E_cx0_cy49_cw0_w1023_r1_s.jpg',
         cityBirth: 'Магілёў',
         birthday: '25 кастрычніка 1936',
-        video: 'https://www.youtube.com/watch?v=pTwHQE4NYJo',
+        video: 'https://www.youtube.com/embed/pTwHQE4NYJo',
         gallery: [
           'http://gdb.rferl.org/93E39899-7DEB-4379-84A5-3EBFFA9CA35F_w610_r0_s.jpg',
           'http://gdb.rferl.org/4CBECE67-E2A5-4AF8-93F1-1ABE36E35814_w610_r0_s.jpg',
@@ -1032,7 +1035,7 @@ export default {
         personPhoto: 'https://upload.wikimedia.org/wikipedia/ru/9/98/Yury_tarich.jpg',
         cityBirth: 'Полацк',
         birthday: '12 (24) студзеня 1885',
-        video: 'https://www.youtube.com/watch?v=n6l17pIZdTg',
+        video: 'https://www.youtube.com/embed/n6l17pIZdTg',
         gallery: [
           'http://imperiaduhu.by/gistoryia/gist-novychas/novy -20-1/malun-20-1/pershynec/lesnaia-byl-taruch.jpg',
           'http://kino-rodina.by/tarich_.gif',

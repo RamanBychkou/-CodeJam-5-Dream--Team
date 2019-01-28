@@ -576,6 +576,7 @@ footer .fa-envelope:hover{
 }
 .search-container {
     display: flex;
+    justify-content: center;
     margin: 50px 0 10vh;
     padding: 0 20px;
     color: #484746;
@@ -616,7 +617,6 @@ footer .fa-envelope:hover{
 .search-container .searching-list {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 200px);
     padding: 20px;
 }
 .search-container .searching-list .searching-item {
@@ -690,6 +690,8 @@ footer .fa-envelope:hover{
   margin: 10px
 }
 .authorFoto {
+  display: flex;
+  align-items: center;
   margin-right: 10px;
   max-width: 30%;
   border: 5px solid #fff;
@@ -727,13 +729,18 @@ footer .fa-envelope:hover{
 }
 .list-of-works .flex-container{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3vh;
 }
 .list-of-works .flex-item-works{
-  width: 40%;
+  display: flex;
+  width: 100%;
   text-align: center;
+}
+.list-of-works .flex-item-works div{
+  width: 50%;
 }
 .list-of-works h2{
   text-align: center;
@@ -802,10 +809,12 @@ h2 {
   text-align: center;
 }
 h2, h3 {
+  text-transform: capitalize;
   font-family: Lato;
   color: rgb(200, 200, 200);
 }
 .description h2, .author-of-the-day h2, .list-of-works h2{
+  text-transform: capitalize;
   color: rgb(17, 83, 17);
 }
 .worksWrapper {
