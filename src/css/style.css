@@ -363,7 +363,7 @@ footer .fa-envelope:hover{
     font-size: 1.4rem;
   }
   header{
-    height: 90vh;
+    height: 50vh;
   }
   .menu{
     flex-direction: column;
