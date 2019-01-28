@@ -88,7 +88,7 @@ function changeLang(language) {
 
 function padTimeline(element, template, obj) {
   clearElem(element);
-  obj.biography.forEach(item => {
+  obj.biography.forEach((item) => {
     const templateEl = document.createElement('div');
     templateEl.innerHTML = template;
     const date = templateEl.querySelector('.date');
@@ -103,8 +103,8 @@ function findPersons(obj, language, name = '', location = '') {
   const list = [];
 
   for (let i = 0, len = obj[language].producers.length; i < len; i += 1) {
-    const producerName = obj[language].producers[i]['name'].toLowerCase();
-    const producerLocation = obj[language].producers[i]['cityBirth'].toLowerCase();
+    const producerName = obj[language].producers[i].name.toLowerCase();
+    const producerLocation = obj[language].producers[i].cityBirth.toLowerCase();
     if (producerName.includes(name.toLowerCase())) {
       if (producerLocation.includes(location.toLowerCase())) list.push(obj[language].producers[i]);
     }
@@ -163,13 +163,13 @@ function addStaticAuthorData(author) {
     galleryItem.appendChild(img);
     gallery.appendChild(galleryItem);
   });
-  author.works.forEach(item => {
+  author.works.forEach((item) => {
     let templateForWorks = document.createElement('div');
     templateForWorks.innerHTML = workListItem;
     templateForWorks = templateForWorks.children[0];
     const actionText = templateForWorks.querySelector('div:first-child');
     const dateText = templateForWorks.querySelector('div:last-child');
-    log(templateForWorks)
+    log(templateForWorks);
     actionText.innerText = item.name;
     dateText.innerText = item.date;
     workListEl.appendChild(templateForWorks);

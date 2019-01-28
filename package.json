@@ -8,6 +8,7 @@
     "watch": "webpack --watch --mode development",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode development",
+    "lint": "eslint -c .eslintrc.json ./src/**/*.js",
     "fix-lint": "eslint -c .eslintrc.json ./src/**/*.js --fix"
   },
   "repository": {
