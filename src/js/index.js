@@ -12,9 +12,9 @@ function getUrlVars() {
   return vars;
 }
 
-const { log } = console;
 const langOptions = ['ru', 'by', 'eng'];
 const selectLanguage = document.getElementById('selectLanguage');
+// eslint-disable-next-line
 const ourLocation = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
 const searchingNameEl = document.getElementById('name');
 const locationEl = document.getElementById('location');
@@ -86,6 +86,13 @@ function changeLang(language) {
   if (textOfWorksEl) textOfWorksEl.innerText = data[language].environment.textOfWorks;
 }
 
+function clearElem(element) {
+  const len = element.children.length;
+  for (let i = 0; i < len; i += 1) {
+    element.children[0].remove();
+  }
+}
+
 function padTimeline(element, template, obj) {
   clearElem(element);
   obj.biography.forEach((item) => {
@@ -113,19 +120,11 @@ function findPersons(obj, language, name = '', location = '') {
   return list;
 }
 
-function clearElem(element) {
-  const len = element.children.length;
-  for (let i = 0; i < len; i += 1) {
-    element.children[0].remove();
-  }
-}
-
 function addPersons(persons = []) {
   if (persons.length === 0) {
     const message = document.createElement('div');
     message.innerText = data[lang].environment.textUnluckyResult;
     searchingListEl.appendChild(message);
-    log(searchingListEl);
     return;
   }
   for (let i = 0, len = persons.length; i < len; i += 1) {
@@ -166,10 +165,10 @@ function addStaticAuthorData(author) {
   author.works.forEach((item) => {
     let templateForWorks = document.createElement('div');
     templateForWorks.innerHTML = workListItem;
+    // eslint-disable-next-line
     templateForWorks = templateForWorks.children[0];
     const actionText = templateForWorks.querySelector('div:first-child');
     const dateText = templateForWorks.querySelector('div:last-child');
-    log(templateForWorks);
     actionText.innerText = item.name;
     dateText.innerText = item.date;
     workListEl.appendChild(templateForWorks);

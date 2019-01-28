@@ -12043,11 +12043,9 @@ function getUrlVars() {
   return vars;
 }
 
-const {
-  log
-} = console;
 const langOptions = ['ru', 'by', 'eng'];
-const selectLanguage = document.getElementById('selectLanguage');
+const selectLanguage = document.getElementById('selectLanguage'); // eslint-disable-next-line
+
 const ourLocation = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
 const searchingNameEl = document.getElementById('name');
 const locationEl = document.getElementById('location');
@@ -12127,6 +12125,14 @@ function changeLang(language) {
   if (textOfWorksEl) textOfWorksEl.innerText = _data__WEBPACK_IMPORTED_MODULE_0__["default"][language].environment.textOfWorks;
 }
 
+function clearElem(element) {
+  const len = element.children.length;
+
+  for (let i = 0; i < len; i += 1) {
+    element.children[0].remove();
+  }
+}
+
 function padTimeline(element, template, obj) {
   clearElem(element);
   obj.biography.forEach(item => {
@@ -12155,20 +12161,11 @@ function findPersons(obj, language, name = '', location = '') {
   return list;
 }
 
-function clearElem(element) {
-  const len = element.children.length;
-
-  for (let i = 0; i < len; i += 1) {
-    element.children[0].remove();
-  }
-}
-
 function addPersons(persons = []) {
   if (persons.length === 0) {
     const message = document.createElement('div');
     message.innerText = _data__WEBPACK_IMPORTED_MODULE_0__["default"][lang].environment.textUnluckyResult;
     searchingListEl.appendChild(message);
-    log(searchingListEl);
     return;
   }
 
@@ -12209,11 +12206,11 @@ function addStaticAuthorData(author) {
   });
   author.works.forEach(item => {
     let templateForWorks = document.createElement('div');
-    templateForWorks.innerHTML = _work_list_item_template__WEBPACK_IMPORTED_MODULE_3__["default"];
+    templateForWorks.innerHTML = _work_list_item_template__WEBPACK_IMPORTED_MODULE_3__["default"]; // eslint-disable-next-line
+
     templateForWorks = templateForWorks.children[0];
     const actionText = templateForWorks.querySelector('div:first-child');
     const dateText = templateForWorks.querySelector('div:last-child');
-    log(templateForWorks);
     actionText.innerText = item.name;
     dateText.innerText = item.date;
     workListEl.appendChild(templateForWorks);
